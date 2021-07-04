@@ -4,7 +4,7 @@ import { Theme as FluentUITheme } from '@rjsf/fluent-ui';
 import { Theme as SemanticUITheme } from '@rjsf/semantic-ui';
 import { Theme as Bootstrap4Theme } from '@rjsf/bootstrap-4';
 
-import FormKore from './components/FormKore'
+import { FormKore } from '../../src/index'
 
 function App() {
   const schema = {
