@@ -1,6 +1,18 @@
 import React from 'react'
-import styles from './styles.module.css'
+import { withTheme } from '@rjsf/core';
+import 'antd/dist/antd.css';
+import 'semantic-ui-css/semantic.min.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export default function FormKore(props) {
+
+    const Form = withTheme(props.framework);
+
+    return (
+        <div>
+            <div style={{ margin: '4rem 6rem' }}>
+              <Form schema={props.schema} uiSchema={props.uiSchema}
+              />
+            </div>
+        </div>
+    )
 }
