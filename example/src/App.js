@@ -1,5 +1,6 @@
 
 import FormKore from 'formkorev1'
+// import FormKore from '../../src/index'
 
 function App() {
   const schema = {
@@ -95,7 +96,7 @@ function App() {
     <>
       <div>
         <FormKore schema={schema} uiSchema={uiSchema} framework="AntDTheme" />
-        <FormKore schema={schema} uiSchema={uiSchema} framework="MuiTheme" />
+        <FormKore schema={schema} uiSchema={uiSchema} framework="FluentUITheme" />
       </div>
     </>
   );
