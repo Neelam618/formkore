@@ -3,8 +3,10 @@ import { Theme as MuiTheme } from 'rjsf-material-ui';
 import { Theme as FluentUITheme } from '@rjsf/fluent-ui';
 import { Theme as SemanticUITheme } from '@rjsf/semantic-ui';
 import { Theme as Bootstrap4Theme } from '@rjsf/bootstrap-4';
+import 'antd/dist/antd.css';
+import 'semantic-ui-css/semantic.min.css'
 
-import { FormKore } from '../../src/index'
+import FormKore from 'formkorev1'
 
 function App() {
   const schema = {
