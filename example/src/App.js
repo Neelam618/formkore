@@ -1,10 +1,3 @@
-import { Theme as AntDTheme } from '@rjsf/antd';
-import { Theme as MuiTheme } from 'rjsf-material-ui';
-import { Theme as FluentUITheme } from '@rjsf/fluent-ui';
-import { Theme as SemanticUITheme } from '@rjsf/semantic-ui';
-import { Theme as Bootstrap4Theme } from '@rjsf/bootstrap-4';
-import 'antd/dist/antd.css';
-import 'semantic-ui-css/semantic.min.css'
 
 import FormKore from 'formkorev1'
 
@@ -98,32 +91,11 @@ function App() {
     }
   }
 
-  let framework = MuiTheme
-  switch (framework) {
-    case "AntDTheme":
-      framework = AntDTheme;
-      break;
-    case "FluentUITheme":
-      framework = FluentUITheme;
-      break;
-    case "SemanticUITheme":
-      framework = SemanticUITheme;
-      break;
-    case "Bootstrap4Theme":
-      framework = Bootstrap4Theme;
-      break;
-    case "MuiTheme":
-      framework = MuiTheme;
-      break;
-    // default:
-    // framework = MuiTheme;
-  }
-
   return (
     <>
       <div>
-        <FormKore schema={schema} uiSchema={uiSchema} framework={"AntDTheme"} />
-        <FormKore schema={schema} uiSchema={uiSchema} framework={"MuiTheme"} />
+        <FormKore schema={schema} uiSchema={uiSchema} framework="AntDTheme" />
+        <FormKore schema={schema} uiSchema={uiSchema} framework="MuiTheme" />
       </div>
     </>
   );
