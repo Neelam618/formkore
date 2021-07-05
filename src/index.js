@@ -10,7 +10,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 export default function FormKore(props) {
   let framework = AntDTheme
-  switch (framework) {
+  switch (props.framework) {
     case "AntDTheme":
       framework = AntDTheme;
       break;
